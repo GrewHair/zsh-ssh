@@ -183,6 +183,7 @@ fzf-complete-ssh() {
     fi
 
     result=$(_fzf-list-generator $result | fzf \
+      --nth=1 \
       --height 40% \
       --ansi \
       --border \
